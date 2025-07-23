@@ -111,15 +111,16 @@ nav ul li img{
     margin-bottom: 13px;
 }
 
+.hero-info p{
+    text-align: left;
+}
+
 /* main styles */
 /* plants styles */
 .our-plants h3, p{
     text-align: center;
 }
 
-.our-plants p{
-    
-}
 
 .plants-title{
     font-size: 3.125rem;
@@ -162,8 +163,92 @@ nav ul li img{
     margin-bottom: 20px;
 }
 
+.plants-lover-description ul li p{
+    text-align: left;
+}
+
 .plants-lover-title{
     font-size: 3.125rem;
     font-weight: 700;
+}
+
+/* join styles */
+.join{
+    background-image: url("../assets/news-letter-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1440px;
+    width: auto;
+    margin-top: 120px;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    height: 533px;
+    text-align: center;
+    padding-top: 199px;
+}
+
+.join-title{
+    color: #FFFFFF;
+    font-size: 3.125rem;
+    font-weight: 700;
+}
+
+.newsletter-subscriber{
+    display: flex;
+    justify-content: center;
+}
+
+.join input{
+    padding: 16px 540px 16px 20px;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 400;
+    border: none;
+}
+
+
+.btn-2{
+    background-color: #E95A08;
+    color: #FFFFFF;
+    border: none;
+    padding: 19px 54px;
+    font-weight: 600;
+}
+
+/* footer styles */
+footer{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 160px;
+    /* gap: 110px; */
+}
+
+.footer-title{
+    width: 359px;
+    height: 179px;
+    margin-bottom: 69px;
+}
+
+.footer-title p{
+    text-align: left;
+}
+
+
+footer li{
+    list-style: none;
+    margin-bottom: 32px;
+}
+
+footer li a{
+    text-decoration: none;
+    color: rgba(107, 114, 128, 1);
+    
+}
+
+.connect{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 212px;
 }
 
