@@ -181,32 +181,29 @@ nav ul li img{
     margin-top: 38px;
     margin-bottom: 38px;
     margin-left: 60px;
-    
 }
 
 .plants-lover-description li{
     text-align: left;
     font-size: 1.375rem;
     font-weight: 400;
-    margin-left: 20px;
+    margin-left: 32px;
     margin-top: 20px;
-}
-
-.trusted-badge{
-    position: absolute;
-    width: 286px;
-    height: 286px;
-    /* margin-left: 26%;
-    margin-bottom: 42%; */
-    margin-top: -570px;
-    margin-left: 350px;
-    background: transparent;
 }
 
 .plants-lover-title{
     font-size: 3.125rem;
     font-weight: 700;
     text-align: left;
+}
+
+.trusted-badge{
+    position: absolute;
+    width: 286px;
+    height: 286px;
+    margin-top: -570px;
+    margin-left: 350px;
+    background: transparent;
 }
 
 /* latest deals styles */
@@ -219,6 +216,12 @@ nav ul li img{
     font-size: 3.125rem;
     font-weight: 700;
     margin-bottom: 16px;
+}
+
+.deal-subtitle{
+    max-width: 888px;
+    width: 100%;
+    margin-left: 146px;
 }
 
 .deal-cards{
@@ -399,7 +402,13 @@ footer li a{
 
 /* responsive styles */
 @media screen and (max-width: 576px) {
+    *{
+        overflow-x: hidden;
+    }
     
+    p{
+        font-size: 1.125rem;
+    }
     /* nav section */
     nav{
         margin-top: 13px;
@@ -409,7 +418,7 @@ footer li a{
         text-align: center;
     }
     
-     nav ul li:not(:last-child),
+    nav ul li:not(:last-child),
     .trusted-badge{
         display: none;
         align-items: center;
@@ -438,7 +447,6 @@ footer li a{
 
     /* plants section */
     .plants-subtitle{
-        font-size: 1.125rem;
         margin-left: 8px;
         text-align: center;
     }
@@ -449,16 +457,21 @@ footer li a{
         margin-top: 28px;
         margin-bottom: 42px;
         margin-left: 16px;
-        margin-right: 0;
-
+        margin-right: 10px;
     }
 
-    .card img{
+    .card img, {
+        max-width: 201px;
         width: 100%;
     }
 
+    .price{
+        margin: 10px 56px 30px 56px;
+    }
+
     .btn{
-        font-size: 1 rem;
+        font-weight: 600;
+        padding: 19px 72.5px 19px 72.5px;
     }
 
     /* plants lover section */
@@ -466,6 +479,7 @@ footer li a{
         flex-direction: column;
         margin-left: 16px;
         margin-right: 16px;
+        margin-top: 0;
     }
 
     .plants-lover img{
@@ -480,24 +494,32 @@ footer li a{
         margin-top: 18px;
         margin-left: 0;
     }
+    
 
-    .plants-lover-text{
-        margin-left: 18px;
-
-
+    .plants-lover-description ul li {
+        display: list-item;
+        font-size: 1.125rem;
+        margin-left: 20px;
     }
+
 
     /* latest deals section */
     .deal-description{
         margin-left: 0;
         margin-right: 0;
+        margin-top: 143px;
+        margin-bottom: 51.5px;
+    }
+
+    .deal-title{
+        font-size: 2rem;
     }
 
     .deal-subtitle{
-        padding-left: 28.5px;
-        padding-right: 28.5px;
+        margin-left: 8px;
         padding-top: 16px;
         text-align: center;
+        
     }
 
     .deal-text button{
@@ -513,6 +535,7 @@ footer li a{
         margin-top: 51.5px;
         margin-left: 16px;
         margin-right: 16px;
+        margin-bottom: 40px;
     }
 
     .small-cards{
